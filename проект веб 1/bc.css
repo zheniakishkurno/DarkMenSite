@@ -1,0 +1,176 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+header {
+    background-color: red;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+main .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center; /* Центрирование карточек */
+}
+
+.worker-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Центрирование текста */
+}
+.worker-card img {
+    width: 150px; /* Adjust to desired size */
+    height: 150px; /* Ensure square frame */
+    object-fit: cover; /* Cover the square without distortion */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+.worker-card h3 {
+    margin-top: 10px;
+}
+
+.worker-card ul {
+    padding-left: 20px;
+    text-align: left; /* Левое выравнивание списка */
+}
+
+.worker-card button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #5c5c5c;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer .social-media a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.phone-number {
+    display: none;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.rating {
+    cursor: pointer;
+}
+
+.rating .star {
+    font-size: 20px;
+}
+
+.rating .star:hover,
+.rating .star:hover ~ .star {
+    color: orange;
+}
+
+.rating .star[data-value="1"] ~ .star,
+.rating .star[data-value="1"]:hover ~ .star {
+    color: black;
+}
+/* Для устройств с шириной экрана до 768px */
+@media screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        padding: 10px; /* Уменьшаем внутренние отступы */
+    }
+
+    header .logo {
+        margin-bottom: 10px; /* Добавляем отступ снизу логотипу */
+    }
+
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul li {
+        display: block; /* Изменяем отображение пунктов меню */
+        margin: 0;
+    }
+}
+
+/* Для устройств с шириной экрана от 768px до 1200px */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .container {
+        width: 90%; /* Уменьшаем ширину основного контейнера */
+    }
+}

@@ -1,0 +1,30 @@
+/* Add your styles here */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.worker-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.worker-card img {
+    width: 100%;
+    height: auto;
+}
+
+.rating .star {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.phone-number {
+    margin-top: 10px;
+    font-weight: bold;
+}

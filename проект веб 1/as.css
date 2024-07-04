@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #ff0000;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.intro {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f2f2f2;
+}
+
+.services img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #5c5c5c;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container {
+    position: relative;
+    padding: 20px;
+}
+
+.company-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.social-icons {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.social-icons a {
+    margin-left: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-info {
+    margin-top: 40px;
+}
+
+/* Media Queries */
+/* Добавляем медиа-запрос для экранов меньше 768px */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column; /* Отображаем элементы вертикально на мобильных устройствах */
+        align-items: center; /* Центрируем элементы */
+        padding: 10px; /* Уменьшаем внутренние отступы */
+    }
+
+    header .logo {
+        margin-bottom: 10px; /* Добавляем отступ снизу логотипу */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Отображаем элементы навигации вертикально */
+        text-align: center; /* Центрируем текст навигации */
+    }
+
+    header nav ul li {
+        margin-left: 0; /* Убираем отступы между пунктами меню */
+        margin-bottom: 10px; /* Добавляем отступ снизу между пунктами меню */
+    }
+
+
+    .intro, .services {
+        padding: 30px 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    footer .container {
+        padding: 10px;
+    }
+    
+    .company-name, .social-icons {
+        position: static;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+    
+    .contact-info {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    .intro, .services {
+        padding: 20px 5px;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    footer .container {
+        padding: 5px;
+    }
+
+    .company-name, .social-icons {
+        position: static;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .social-icons {
+        margin-top: 5px;
+    }
+    
+    .contact-info {
+        text-align: center;
+    }
+}

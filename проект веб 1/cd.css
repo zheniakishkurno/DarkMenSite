@@ -1,0 +1,118 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+header {
+    background-color: red;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+}
+footer {
+    background-color: #5c5c5c;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+h1, h2 {
+    color: #d91921;
+}
+.section {
+    margin-bottom: 20px;
+}
+/* Для устройств с максимальной шириной экрана до 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Уменьшаем ширину основного контейнера */
+    }
+
+    header .container {
+        flex-direction: column; /* Переключаем направление элементов в контейнере на вертикальное */
+        padding: 10px; /* Уменьшаем внутренние отступы */
+    }
+
+    header .logo {
+        margin-bottom: 10px; /* Добавляем отступ снизу логотипу */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Переключаем направление элементов списка на вертикальное */
+        text-align: center; /* Выравниваем список по центру */
+    }
+
+    header nav ul li {
+        margin-left: 0; /* Убираем отступы между пунктами меню */
+        margin-bottom: 10px; /* Добавляем отступ снизу между пунктами меню */
+    }
+
+    nav ul li {
+        display: block; /* Изменяем отображение пунктов меню */
+        margin: 0; /* Убираем отступы между пунктами меню */
+    }
+
+    main {
+        padding: 10px; /* Уменьшаем внутренние отступы */
+    }
+}
